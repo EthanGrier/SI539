@@ -26,13 +26,15 @@ Add an if-else statement to your setHomeAddress() function so that when the chec
     <script type="text/javascript">
 	   function setHomeAddress(){
       var billy = document.getElementById('billing').value;
-			var homeadd = document.getElementbyID('home');
+			var homeadd = document.getElementById('home');
 
-			if (document.getElementById("useBilling").checked == true) {
+			if (document.getElementById("useBilling").checked == true){
 				homeadd.value = billy;
 				homeadd.disabled = true;
 
-			} else {
+			}
+
+			else {
 				homeadd.value = "";
 				homeadd.disabled = false;
 			}
