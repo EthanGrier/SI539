@@ -20,28 +20,20 @@
 			var n_err = document.getElementById("nameerrormsg");
 			var a_err = document.getElementById("addresserror");
 
-			if (!name.value){
-				n_err.style.display = "block";
-
-			}
+			if (!name.value || name.value = ""){
+				n_err.style.display = "block";}
 
 			else {
-				n_err.style.display = "none";
-			}
+				n_err.style.display = "none";}
 
-			if (!street.value){
-				a_err.style.display = "block";
-
-			}
+			if (!street.value || street.value = ""){
+				a_err.style.display = "block";}
 
 			else {
-				a_err.style.display = "none";
-			}
+				a_err.style.display = "none";}
 
-			if (!name.value || !street.value){
-				return false;
-
-			}
+			if (!name.value || !street.value || name.value = "" || street.value = ""){
+				return false;}
 		}
     </script>
 </head>
