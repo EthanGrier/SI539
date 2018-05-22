@@ -41,17 +41,17 @@
 function showImage(img){
 	var src = img.src;
 	var alt = img.alt;
-	var imgdiv = document.getElementById("image");
+	var imgDiv = document.getElementById("image");
 
-	imgdiv.style.backgroundImage = "url (" + img.src + ")";
-	imgdiv.innerHTML = img.alt;
+	imgDiv.style.backgroundImage = "url(" + img.src + ")";
+	imgDiv.innerHTML = img.alt;
 }
 
 function hideImage(){
-	var imgdiv = document.getElementById("image");
+	var imgDiv = document.getElementById("image");
 
-	imgdiv.style.backgroundImage = null;
-	imgdiv.innerHTML = "Hover over an image below."
+	imgDiv.style.backgroundImage = null;
+	imgDiv.innerHTML = "Hover over an image below."
 }
 
 	</script>
@@ -71,8 +71,7 @@ function hideImage(){
 			onmouseout="hideImage()"
 			tabindex="0"
 			onfocus="showImage(this)"
-			onblur="hideImage"
-			>
+			onblur="hideImage()">
 
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
@@ -83,20 +82,16 @@ function hideImage(){
 			onmouseout="hideImage()"
 			tabindex="1"
 			onfocus="showImage(this)"
-			onblur="hideImage"
-
-
-			>
+			onblur="hideImage()">
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" 
+		<img class = "preview"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
 			alt = "Young Puppy";
 			onmouseover="showImage(this)"
 			onmouseout="hideImage()"
 			tabindex="0"
 			onfocus="showImage(this)"
-			onblur="hideImage"
-			>
+			onblur="hideImage()">
 </body>
 </html>
