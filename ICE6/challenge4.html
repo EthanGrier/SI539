@@ -15,28 +15,30 @@
 
     <script type="text/javascript">
     function checkForm(){
-			var fullname = document.getElementById("fullname");
+			var name = document.getElementById("fullname");
 			var street = document.getElementById("streetaddr");
-			var namerror = document.getElementById("nameerrormsg");
-			var addresserror = document.getElementById("addresserror");
+			var n_err = document.getElementById("nameerrormsg");
+			var a_err = document.getElementById("addresserror");
 
-			if (!fullname.value) { namerror.style.display = "block";
-
-			}
-
-			else {
-				namerror.style.display = "none";
-			}
-
-			if (!street.value) { addresserror.style.display = "block";
+			if (!name.value){ 
+				n_err.style.display = "block";
 
 			}
 
 			else {
-				addresserror.style.display = "none";
+				n_err.style.display = "none";
 			}
 
-			if (!fullname.value || !street.value){
+			if (!street.value){
+				a_err.style.display = "block";
+
+			}
+
+			else {
+				a_err.style.display = "none";
+			}
+
+			if (!name.value || !street.value){
 				return false;
 
 			}
