@@ -18,21 +18,21 @@
 			var name = document.getElementById("fullname").value;
 			var street = document.getElementById("streetaddr").value;
 			var n_err = document.getElementById("nameerrormsg");
-			var a_err = document.getElementById("addresserror");
+			var a_err = document.getElementById("addresserrormsg");
 
-			if (!name){
+			if (!name.value){
 				n_err.style.display = "block";}
 
 			else {
 				n_err.style.display = "none";}
 
-			if (!street){
+			if (!street.value){
 				a_err.style.display = "block";}
 
 			else {
 				a_err.style.display = "none";}
 
-			if (!name || !street){
+			if (!name.value || !street.value){
 				return false;}
 		}
     </script>
