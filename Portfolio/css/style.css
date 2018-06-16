@@ -1,0 +1,200 @@
+
+/*-----COLORS FOR USE:
+Pink #ffc5c3
+Blue #ccebe6
+Black
+White
+Nav Colors:
+Purple (unselected) #d9cceb
+  ----*/
+html, body, header, footer{
+   font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html{
+  height: 100vh;
+}
+
+body{
+  height: 100%;
+}
+
+.main-content{
+  text-align: center;
+  line-height: 2;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.main-content h1, .main-content h2, .main-content h3{
+  background-color: white;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px 0px black;
+  border-radius: 2%;
+}
+
+.shortsummary{
+  background-color: white;
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px 0px black;
+  border-radius: 2%;
+}
+.main-content > img{
+  width: 25%;
+}
+
+
+.progressbar {
+  background-color: black;
+
+  padding: 3px;
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15px;
+}
+
+.progressbar > div {
+   background-color: #d9cceb;
+   width: 70%;
+   height: 15px;
+
+}
+
+.sketch .innerbar {
+  width: 70%;
+}
+
+.usermapping .innerbar{
+  width: 90%;
+}
+
+.rstats .innerbar{
+  width: 65%;
+}
+
+.adobesuite .innerbar{
+  width: 85%;
+}
+
+.spss .innerbar{
+  width: 80%;
+
+}
+
+.interviewing .innerbar{
+  width: 95%;
+
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.skills p{
+  width: 15%;
+  line-height: 1;
+}
+
+/*-----Header and Footer---*/
+header{
+  background-color: #ccebe6;
+  width: 10%;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  border-right: 2px solid black;
+}
+
+.left-nav .button{
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.left-nav .button img{
+  width: 60%;
+}
+
+.left-nav a{
+  color: black;
+}
+
+.left-nav .button:hover{
+  background-color: #d9cceb;
+}
+
+.left-nav > div{
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.current-page{
+  background-color: #ffc5c3;
+}
+
+
+footer{
+  background-color: #ffc5c3;
+  border-top: 2px solid black;
+  margin-top: 2%;
+  padding: 2%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+footer img{
+  height: 50px;
+}
+
+table{
+  width: 100%;
+}
+
+td{
+}
+
+td img{
+  width:100%;
+}
+
+
+
+.everything-else{
+/*----MAKE HEIGHT MATCH HEIGHT OF PAGE-----*/
+  height: auto;
+  display: inline-block;
+  margin-left: 10%;
+  width: 90%;
+
+
+
+
+  background-image: url("../img/homebackground2.jpg");
+
+  background-position: center;
+
+  background-attachment: fixed;
+
+
+
+  min-height: 100%;
+
+
+}
