@@ -39,8 +39,8 @@
     margin-top: 0px;
   }
 
-  table{
-    border-spacing: 25px 25px 25px 0px;
+  td{
+    padding-right: 2%;
   }
 
 }
