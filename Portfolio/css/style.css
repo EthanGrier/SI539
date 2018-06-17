@@ -146,6 +146,13 @@ header{
   background-color: #ffc5c3;
 }
 
+.mobile-nav{
+  display: none;
+}
+
+.menubutton{
+  display: none;
+}
 
 footer{
   background-color: #ffc5c3;

@@ -17,6 +17,11 @@
 </head>
 <body class="body body-home">
 	<header>
+
+		<div class="menubutton" onclick="navToggle()">
+			<img src="img/mobilemenu.png" alt="A picture of a menu icon."/>
+		</div>
+
 		<nav id="left-nav" class="left-nav">
 
 
@@ -33,14 +38,38 @@
 							<a href="contact.html"><div class="button">Contact Me</div></a>
 	    	</div>
    		</nav>
+
+
+
 	</header>
 	<div class="everything-else">
+		<nav id="mobile-nav" class="mobile-nav">
+			<div>
+					 <a href="index.html">
+						 <div class="button">
+
+							 <img src="img/home.png" alt="A picture of a little house."/>
+
+						 </div>
+					 </a>
+					 <a href="aboutme.html"><div class="button">About Me</div></a>
+					 <a href="projects.html"><div class="current-page button">Projects</div></a>
+					 <a href="contact.html"><div class="no-border button">Contact Me</div></a>
+			</div>
+
+
+
+
+
+
+
+		</nav>
 		<div id="main-content" class="main-content main-content-home">
       <h1> Check out my works! </h1>
       <p> PLACEHOLDER TEXT FOR DESCRIPTION OF WORKS </p>
       <table>
         <tr>
-          <td>
+          <td class="summary">
             <h2>Pollworker Personas</h2>
           </td>
           <td>
@@ -60,7 +89,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td class="summary">
             <h2>Pollworker User Journeys</h2>
           </td>
           <td>
@@ -80,7 +109,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td class="summary">
             <h2>Academyia Prototype</h2>
           </td>
           <td>
@@ -120,5 +149,23 @@
 			</div>
 		</footer>
   </div>
+	<script>
+		function navToggle() {
+			if (document.getElementById("mobile-nav").style.display === "block") {
+				document.getElementById("mobile-nav").style.display = "none"
+
+			}
+			else {
+				document.getElementById("mobile-nav").style.display = "block";
+
+			}
+
+
+
+		}
+
+
+
+	</script>
 </body>
 </html>

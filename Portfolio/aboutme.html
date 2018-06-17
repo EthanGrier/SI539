@@ -33,6 +33,27 @@
    		</nav>
 	</header>
 	<div class="everything-else">
+		<nav id="mobile-nav" class="mobile-nav">
+			<div>
+					 <a href="index.html">
+						 <div class="button">
+
+							 <img src="img/home.png" alt="A picture of a little house."/>
+
+						 </div>
+					 </a>
+					 <a href="aboutme.html"><div class="current-page button">About Me</div></a>
+					 <a href="projects.html"><div class="button">Projects</div></a>
+					 <a href="contact.html"><div class="no-border button">Contact Me</div></a>
+			</div>
+
+
+
+
+
+
+
+		</nav>
 		<div id="main-content" class="main-content main-content-home">
 			<h1> Here's a Bit About Me... </h1>
 			<img alt="A picture of me." src="img/Me2.jpg"/>
@@ -60,5 +81,23 @@
 			</div>
 		</footer>
 	</div>
+	<script>
+		function navToggle() {
+			if (document.getElementById("mobile-nav").style.display === "block") {
+				document.getElementById("mobile-nav").style.display = "none"
+
+			}
+			else {
+				document.getElementById("mobile-nav").style.display = "block";
+
+			}
+
+
+
+		}
+
+
+
+	</script>
 </body>
 </html>
